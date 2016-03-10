@@ -4,5 +4,5 @@ push: javaimage
 
 javaimage: Dockerfile
 	docker pull meteogroup/centos:7
-	cat Dockerfile | docker build --rm -t meteogroup/centos-oraclejava8 -
+	docker build --rm -t meteogroup/centos-oraclejava8 .
 	touch javaimage
